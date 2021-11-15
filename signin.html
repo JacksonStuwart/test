@@ -1,0 +1,70 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- link to fonts and Style sheet -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <title>CartRabbit</title>
+
+</head>
+
+<body>
+
+    <!-- header section -->
+
+    <header>
+
+        <h2 class="dialouge1"> JOHN'S SERVICE STATION</h2>
+        <h6 class="dialouge2">
+            A HOSPITAL WERE BIKES GET TREATMENT
+        </h6>
+
+
+    </header>
+
+    <div id="register">
+        <div id="insidelogin">
+            <div id="sl">
+                <h2>Login</h2>
+            </div>
+
+            <!-- Form to submit values of the user logged in -->
+
+            <form action="/login" method="post" autocomplete="off">
+                <input type="email" id="email" class="register" name="email" placeholder="Enter your E-Mail"></input><br>
+                <input type="password" id="password" class="register" name="password" placeholder="Enter Password"></input><br>
+                <button type="submit" id="login" class="button" name="submit">Login</button><br>
+            </form>
+
+            <!-- Route to Forgot password page -->
+
+            <form action="/forgotAcc" class="router" method="post">
+                <button id="forgot" type="submit">Forgot Password ?</button>
+            </form>
+
+            <!-- Route to Not have account page -->
+
+            <form action="/notAcc" class="router" method="post">
+                <button id="notAcc" type="submit">Not have an account ? Sign up</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <h2 class="dialouge3">15YEARS OF EXPERIENCE</h2>
+
+        <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+
+    </footer>
+
+</body>
+
+</html>

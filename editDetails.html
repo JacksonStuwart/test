@@ -1,0 +1,111 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Link to Google Font -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-- link to stylesheet -->
+
+    <link rel="stylesheet" href="css/register.css">
+
+
+    <title>Owner</title>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+
+        <h2 class="dialouge1"> JOHN'S SERVICE STATION</h2>
+        <h6 class="dialouge2">
+            A HOSPITAL WERE BIKES GET TREATMENT
+        </h6>
+
+        <!-- Logout function -->
+
+        <form action="logout" method="post">
+            <button id="logout" type="submit" class="ownlogout" name="submit">Logout</button><br>
+        </form>
+
+    </header>
+    <h2><br>
+        <center>Completed Booking Status</center>
+        <table>
+            <tr>
+
+                <td>Name</td>
+                <td>
+                    <%= pbookedBy%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Booking Date</td>
+                <td>
+                    <%= pbookingDate%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Booking Time</td>
+                <td>
+                    <%= pbookingTime%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Service Type</td>
+                <td>
+                    <%=pserviceType%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Vehicle Name</td>
+                <td>
+                    <%= pvehicleName%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Vehicle No</td>
+                <td>
+                    <%= pvehicleNo%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Booking Status</td>
+                <td>
+                    <%= pbookingStatus%>
+                </td>
+
+            </tr>
+            <tr>
+                <!-- Route to  DELETE FIREbase Value  -->
+
+                <form action="/deleteFirebase" method="post"><button id="delete">Delete</button></form>
+
+                <!-- Route to  EDIT FIREbase Value  -->
+
+                <form action="/editFirebase" method="post"> <input id="inputedit" type="text" placeholder="Type Status of Vehicle" name="name"></input> <button id="edit">Edit</button></form>
+            </tr>
+        </table>
+
+
+        <footer id="lastfoot2">
+
+            <h2 class="dialouge3">15YEARS OF EXPERIENCE</h2>
+
+            <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+
+    <!-- Link to fonts and Stylesheet -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/register.css">
+
+
+    <title>CartRabbit</title>
+
+</head>
+
+<body>
+
+    <!-- header section -->
+
+    <header>
+
+        <h2 class="dialouge1"> JOHN'S SERVICE STATION</h2>
+        <h6 class="dialouge2">
+            A HOSPITAL WERE BIKES GET TREATMENT
+        </h6>
+
+
+    </header>
+
+    <div id="register">
+        <div id="insidesignup">
+            <div id="sl">
+                <h2>Sign up</h2>
+            </div>
+
+            <!-- Form to Register details of the user -->
+
+            <form action="/register" method="post" autocomplete="off">
+                <input type="email" id="email" class="register" name="email" placeholder="Enter your E-Mail"></input><br>
+                <input type="password" id="password" class="register" name="password" placeholder="Enter Password"></input><br>
+                <input type="password" class="register" name="cpassword" placeholder="Confirm Password"></input><br>
+
+                <button type="submit" id="signup" class="button" name="submit">Sign up</button><br>
+            </form>
+
+            <!-- route to have an account page -->
+
+            <form action="/haveAcc" class="router" method="post">
+                <button id="haveAcc" type="submit">Have an account ? Login</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- footer section -->
+
+    <footer>
+
+        <h2 class="dialouge3">15YEARS OF EXPERIENCE</h2>
+
+        <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+
+    </footer>
+
+</body>
+
+</html>

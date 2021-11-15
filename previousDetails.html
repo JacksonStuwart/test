@@ -1,0 +1,114 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- link Google  Fonts and stylesheet -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/register.css">
+
+
+
+    <title>Customer</title>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <!-- Route to customerDetails -->
+        <form action="/customerDetails" method="post">
+            <button id="cusbut" class="cd">
+                Customer Details</button>
+        </form>
+
+        <!-- Route to home services about us ppage -->
+
+        <form action="/home" method="post"><button id="navH">Home</button></form>
+        <form action="/services" method="post"><button id="navS">Services</button></form>
+        <form action="/about" method="post"><button id="navA">About us</button></form>
+
+        <div>
+
+            <!-- Route to logout -->
+
+            <form action="logout" method="post">
+                <button id="logout" type="submit" class="button" name="submit">Logout</button><br>
+            </form>
+
+        </div>
+
+    </header>
+
+    <h2><br>
+        <center>Previous Booking Status</center>
+        <table>
+            <tr>
+
+                <td>Name</td>
+                <td>
+                    <%= pbookedBy%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Booking Date</td>
+                <td>
+                    <%= pbookingDate%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Booking Time</td>
+                <td>
+                    <%= pbookingTime%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Service Type</td>
+                <td>
+                    <%=pserviceType%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Vehicle Name</td>
+                <td>
+                    <%= pvehicleName%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Vehicle No</td>
+                <td>
+                    <%= pvehicleNo%>
+                </td>
+            </tr>
+            <tr>
+
+                <td>Booking Status</td>
+                <td>
+                    <%= pbookingStatus%>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Footer Section -->
+
+        <footer id="lastfoot2">
+
+            <h2 class="dialouge3">15YEARS OF EXPERIENCE</h2>
+
+            <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+
+        </footer>
+
+</body>
+
+</html>

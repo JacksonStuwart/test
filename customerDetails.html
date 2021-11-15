@@ -1,0 +1,124 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-----------fonts------------->
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-----------fonts------------->
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-----------linkto stylesheet------------->
+
+    <title>Customer</title>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <header>
+
+        <!-- route to customerDetails -->
+
+        <form action="/customerDetails" method="post">
+            <button id="cusbut" class="cd">
+                Customer Details</button>
+        </form>
+
+
+        <!-- Route to HOME SERVICES ABOUT -->
+
+        <form action="/home" method="post"><button id="navH">Home</button></form>
+        <form action="/services" method="post"><button id="navS">Services</button></form>
+        <form action="/about" method="post"><button id="navA">About us</button></form>
+
+        <div>
+
+            <!-- Route to logout function -->
+
+            <form action="logout" method="post">
+                <button id="logout" type="submit" class="button" name="submit">Logout</button><br>
+            </form>
+        </div>
+
+    </header>
+    <h2><br>
+        <center>Current Booking Status</center>
+    </h2>
+    <table>
+        <tr>
+
+            <td>Name</td>
+            <td>
+                <%= bookedBy%>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Booking Date</td>
+            <td>
+                <%= bookingDate%>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Booking Time</td>
+            <td>
+                <%= bookingTime%>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Service Type</td>
+            <td>
+                <%=serviceType%>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Vehicle Name</td>
+            <td>
+                <%= vehicleName%>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Vehicle No</td>
+            <td>
+                <%= vehicleNo%>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Booking Status</td>
+            <td>
+                <%= bookingStatus%>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Route To Previous Details -->
+
+    <form action="/previousDetails" method="post">
+        <button id="previousbooking" type="submit">click Here to see Previous Booking Details</button>
+    </form>
+
+    <!-----------footer section------------->
+
+    <footer id="lastfoot">
+
+        <h2 class="dialouge3">15YEARS OF EXPERIENCE</h2>
+
+        <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+
+    </footer>
+
+</body>
+
+</html>
